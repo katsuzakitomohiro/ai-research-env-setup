@@ -28,6 +28,10 @@ def sanitize(text):
     text = text.replace("Users-katsu", "Users-USERNAME")
     # 他プロジェクト名に含まれる個人名
     text = text.replace("katsuzaki-tomohiro", "***REDACTED-NAME***")
+    # 本文中の個人名（LINE メッセージ等）
+    text = text.replace("勝崎", "***名前***")
+    text = text.replace("葛崎", "***名前***")
+    text = text.replace("重信", "***指導教員名***")
     # OAuth トークン
     text = re.sub(r"sk-ant-\S+", "sk-ant-***REDACTED***", text)
     # Organization UUID
