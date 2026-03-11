@@ -1,0 +1,17 @@
+# Claude Code の設定・認証情報
+.claude/
+
+# OS 生成ファイル
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# エディタ設定
+.vscode/
+*.swp
+*.swo
+*~
+
+# Node.js（lint ツール等で使用した場合）
+node_modules/
+package-lock.json
