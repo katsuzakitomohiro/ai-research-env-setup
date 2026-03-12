@@ -7,8 +7,6 @@ AI ツール（Claude Code, GitHub Copilot 等）を活用して
 > **初回実施日**: 2026-03-11
 > **所要時間**: 約 2 時間（実作業時間、休憩除く）
 > **作業環境**: 前半は PC（VS Code + Claude Code）、
-> 後半は iPad から Claude Code の
-> リモートコントロール機能で指示
 > **使用トークン数**: 約 15 万トークン（推定、
 > Claude Pro プランの利用枠内で十分対応可能な量）
 
@@ -17,6 +15,7 @@ AI ツール（Claude Code, GitHub Copilot 等）を活用して
 - Windows 11 / macOS ユーザー
 - MATLAB / MATPOWER を用いた電力系統研究者
 - AI ツールを研究ワークフローに取り入れたい方
+- git,githubを触ってみたい方
 
 ## ファイル構成
 
