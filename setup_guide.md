@@ -98,7 +98,11 @@
 2. インストーラーの途中で表示される
    **"Choosing the default editor used by Git"** で
    **"Use Visual Studio Code as Git's default editor"**
-   を選択する（デフォルトは Vim）。
+   を選択する（デフォルトは Vim）
+3. **"Overriding the default branch name for new repositories"** で
+   **"Override the default branch name for new repositories"**
+   にチェックを入れ、入力欄に `main` と入力する
+   （デフォルトは `master` のまま）。
    その他のオプションはデフォルトのままで進める
 
 **Mac の場合**:
@@ -119,11 +123,17 @@
    ```bash
    git config --global user.name "GitHubのユーザー名"
    git config --global user.email "ID+USERNAME@users.noreply.github.com"
+   git config --global init.defaultBranch main
    ```
 
    > `ID+USERNAME@users.noreply.github.com` は、
    > GitHub の **Settings > Emails** に表示される
    > noreply アドレスに置き換える。
+   >
+   > Windows でインストーラーのステップ3で
+   > `main` を設定済みの場合も、
+   > このコマンドで確認・上書きができるため、
+   > 共通手順として実行を推奨する。
 
 2. 設定が正しく反映されたか確認する：
 
@@ -131,7 +141,8 @@
    git config --global --list
    ```
 
-   `user.name` と `user.email` が
+   `user.name`、`user.email`、
+   `init.defaultbranch=main` が
    意図した値になっていれば OK。
 
 **参考**:
@@ -503,7 +514,7 @@ Windows: `Ctrl+K V` / Mac: `Cmd+K V`）。
 - [ ] ChatGPT アカウント作成・学習 OFF
 - [ ] Claude アカウント作成・学習 OFF
 - [ ] VS Code インストール・設定シンク有効化
-- [ ] Git インストール・ユーザー名/メール設定
+- [ ] Git インストール・ユーザー名/メール/デフォルトブランチ設定
 - [ ] Node.js インストール（必要な場合のみ）
 - [ ] GitHub CLI インストール・認証
 - [ ] Claude Code インストール・認証
